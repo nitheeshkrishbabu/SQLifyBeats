@@ -84,7 +84,7 @@ In advanced stages, the focus shifts to improving query performance. Some optimi
 
 ### Advanced Level
 1. **Find the top 3 most-viewed tracks for each artist using window functions.**
-   ```sql
+```sql
 WITH artist_data 
 AS
 (
