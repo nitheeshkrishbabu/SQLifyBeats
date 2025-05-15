@@ -117,6 +117,11 @@ WHERE rn <=3;
 3. Use a `WITH` clause to calculate the difference between the highest and lowest energy values for tracks in each album.
 4. Find tracks where the energy-to-liveness ratio is greater than 1.2.
 5. Calculate the cumulative sum of likes for tracks ordered by the number of views, using window functions.
+6. Calculate Stream-to-Like Ratio.
+7. Calculate Average Metrics by Album Type and Compare Each Song to Its Group.
+8. Find the Tracks with Highest Engagement (Likes + Comments) - Top 10.
+9. Find Songs with Highest-to-Lowest Likes-to-Comments Ratio.
+10. Find Longest Song per Album with Dense Rank.
 
 
 Here’s an updated section for your **Spotify Advanced SQL Project and Query Optimization** README, focusing on the query optimization task you performed. You can include the specific screenshots and graphs as described.
