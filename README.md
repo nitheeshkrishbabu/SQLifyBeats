@@ -133,13 +133,13 @@ To improve query performance, we carried out the following optimization process:
         - Execution time (E.T.): **7 ms**
         - Planning time (P.T.): **0.17 ms**
     - Below is the **screenshot** of the `EXPLAIN` result before optimization:
-      ![EXPLAIN Before Index](https://github.com/najirh/najirh-Spotify-Data-Analysis-using-SQL/blob/main/spotify_explain_before_index.png)
+      ![EXPLAIN Before Index](https://github.com/nitheeshkrishbabu/SQLifyBeats/blob/main/spotify_explain_before_index.png)
 
 - **Index Creation on the `artist` Column**
     - To optimize the query performance, we created an index on the `artist` column. This ensures faster retrieval of rows where the artist is queried.
     - **SQL command** for creating the index:
       ```sql
-      CREATE INDEX idx_artist ON spotify_tracks(artist);
+      CREATE INDEX idx_artist ON spotify(artist);
       ```
 
 - **Performance Analysis After Index Creation**
@@ -154,7 +154,7 @@ To improve query performance, we carried out the following optimization process:
     - **Graph view** shows the significant drop in both execution and planning times:
       ![Performance Graph](https://github.com/nitheeshkrishbabu/SQLifyBeats/blob/main/spotify_graphical_analysis.png)
       ![Performance Graph](https://github.com/nitheeshkrishbabu/SQLifyBeats/blob/main/spotify_graphical_view.png)
-      ![Performance Graph](https://github.com/najirh/najirh-Spotify-Data-Analysis-using-SQL/blob/main/spotify_graphical%20view%201.png)
+      ![Performance Graph](https://github.com/nitheeshkrishbabu/SQLifyBeats/blob/main/spotify_graphical_analysis_index.png)
 
 This optimization shows how indexing can drastically reduce query time, improving the overall performance of our database operations in the Spotify project.
 ---
